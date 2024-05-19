@@ -61,6 +61,12 @@ build CMakeFiles/code.dir/data_structures/matrix/matrix.c.obj: C_COMPILER__code_
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir\data_structures\matrix
 
+build CMakeFiles/code.dir/data_structures/string/string_.c.obj: C_COMPILER__code_unscanned_Debug C$:/Users/ivanu/CLionProjects/lab_OP_19/data_structures/string/string_.c || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\data_structures\string\string_.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\code.dir
+  OBJECT_FILE_DIR = CMakeFiles\code.dir\data_structures\string
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target code
@@ -69,7 +75,7 @@ build CMakeFiles/code.dir/data_structures/matrix/matrix.c.obj: C_COMPILER__code_
 #############################################
 # Link the executable code.exe
 
-build code.exe: C_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/main.c.obj CMakeFiles/code.dir/data_structures/matrix/matrix.c.obj
+build code.exe: C_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/main.c.obj CMakeFiles/code.dir/data_structures/matrix/matrix.c.obj CMakeFiles/code.dir/data_structures/string/string_.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\code.dir
