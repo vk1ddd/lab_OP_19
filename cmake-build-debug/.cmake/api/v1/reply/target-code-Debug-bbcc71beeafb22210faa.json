@@ -104,7 +104,8 @@
 				3,
 				4,
 				5,
-				7
+				7,
+				8
 			]
 		}
 	],
@@ -151,6 +152,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "task/calculating_an_expression.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "task/filter_word.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -89,7 +89,7 @@ void test1_calculating_an_expression(){
 }
 
 void test2_calculating_an_expression(){
-    const char filename[] = "C:\\Users\\ivanu\\CLionProjects\\lab_OP_19\\task_3_test_1.txt";
+    const char filename[] = "C:\\Users\\ivanu\\CLionProjects\\lab_OP_19\\task_3_test_2.txt";
     char expression[] = "3 * 4 + 2";
     FILE *file = fopen(filename, "w");
     fputs(expression, file);
