@@ -105,7 +105,8 @@
 				4,
 				5,
 				7,
-				8
+				8,
+				9
 			]
 		}
 	],
@@ -157,6 +158,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "task/filter_word.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "task/long_words_in_lines.h",
 			"sourceGroupIndex" : 1
 		}
 	],

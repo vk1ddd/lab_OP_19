@@ -12,4 +12,5 @@ add_executable(code main.c
         data_structures/string/string_.c
         task/calculating_an_expression.h
         task/filter_word.h
+        task/long_words_in_lines.h
 )

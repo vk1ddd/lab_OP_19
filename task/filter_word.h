@@ -83,13 +83,41 @@ void filter_word(const char *filename, char *s) {
         }
     }
 
-    *string_rec = '\0';
-
     add_in_file(filename, string);
 }
 
 void test1_filter_word() {
     const char filename[] = "C:\\Users\\ivanu\\CLionProjects\\lab_OP_19\\task_4_test_1.txt";
+
+    add_in_file(filename, "hello world");
+    char s[] = "ata";
+    filter_word(filename, s);
+
+    FILE *file = fopen(filename, "r");
+    char data[100] = "";
+    fgets(data, sizeof(data), file);
+    fclose(file);
+
+    assert(strcmp_("   ", data));
+}
+
+void test2_filter_word() {
+    const char filename[] = "C:\\Users\\ivanu\\CLionProjects\\lab_OP_19\\task_4_test_2.txt";
+
+    add_in_file(filename, "data");
+    char s[] = "ata";
+    filter_word(filename, s);
+
+    FILE *file = fopen(filename, "r");
+    char data[100] = "";
+    fgets(data, sizeof(data), file);
+    fclose(file);
+
+    assert(strcmp_("data ", data));
+}
+
+void test3_filter_word() {
+    const char filename[] = "C:\\Users\\ivanu\\CLionProjects\\lab_OP_19\\task_4_test_3.txt";
 
     add_in_file(filename, "data python trata asdataasd ata banana CLion");
     char s[] = "ata";
@@ -100,11 +128,13 @@ void test1_filter_word() {
     fgets(data, sizeof(data), file);
     fclose(file);
 
-    printf("%s", data);
+    assert(strcmp_("data trata asdataasd ata", data));
 }
 
 void tests_filter_word() {
     test1_filter_word();
+    test2_filter_word();
+    test3_filter_word();
 }
 
 #endif //LAB_OP_19_FILTER_WORD_H
